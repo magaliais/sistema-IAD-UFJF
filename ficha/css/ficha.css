@@ -1,0 +1,54 @@
+.bordinhacurva{
+  border-radius: 5px;
+  border-width: 4px;
+  border-color: #6b6868!important;
+  border-style: solid;
+  border-radius: 0.25rem !important;
+}
+.bordinha{
+  border-width: 4px;
+  border-color: #362727!important;
+  border-style: solid;
+}
+.bordinhar{
+  border-right: 2px;
+  border-bottom: 4px;
+  border-color: #362727!important;
+  border-style: none solid solid none;
+}
+
+.bordinhal{
+  border-left: 2px;
+  border-bottom: 4px;
+  border-color: #362727!important;
+  border-style: none none solid solid;
+}
+
+.bordinhab{
+  border-bottom: 2px;
+  border-color: #362727!important;
+  border-style: none none solid none;
+}
+.linhab{
+  text-decoration: underline solid black;
+}
+.textoDeD{
+  text-align: center;
+  text-shadow: 8px 8px 30px #343a40;
+  font-size: 1.5em;
+  font-family: fantasy;
+  font-weight: bold;
+}
+.subtex{
+  font-size: 0.9em;
+  font-family: fantasy;
+  font-weight: normal;
+}
+.subtex2{
+  font-size: 0.85em;
+  font-family: fantasy;
+  font-weight: normal;
+}
+.textbarrinha{
+  font-size: 1.7em;
+}

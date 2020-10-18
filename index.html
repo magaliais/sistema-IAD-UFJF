@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+      window.onload = function() {
+        //verifica se tem ficha
+      }
+    </script>
+    <title>Cores Vivas | Conscientização humana</title>
+    <link rel="shortcut icon" href="img/mpatapo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Inicio -->
+      <div class="container">
+        <div class="row d-none d-lg-flex noprint">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10 bag-secondary">
+            <img class="img-fluid d-none d-lg-flex" src="img/tijolo.jpg" alt="Erro">
+            <nav class="navbar navbar-expand bag-secondary d-flex justify-content-around">
+              <a class="navbar-brand link-nav" href="index.html"><i class="fas fa-home"> Inicio</i></a>
+              <a class="navbar-brand link-nav" href="historia.html"><i class="fas fa-book"> História</i></a>
+              <a class="navbar-brand link-nav" href="ficha/fichas.html"><i class="far fa-id-card"> Fichas</i></a>
+              <a class="navbar-brand link-nav" href="sair"><i class="fas fa-sign-out-alt"> Sair</i></a>
+            </nav>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+        <div class="row invimin-lg bag-secondary noprint">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-around">
+              <a class="navbar-brand link-nav" href="index.html"><i class="fas fa-home"> Inicio</i></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars link-nav"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="historia.html"><i class="fas fa-book"> História</i></a></li>
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="ficha/fichas.html"><i class="far fa-id-card"> Fichas</i></a></li>
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="sair"><i class="fas fa-sign-out-alt"> Sair</i></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+    <!-- Fim inicio -->
+    <!-- Inicio Corpo -->
+        <div class="row mb-auto noprint">
+          <div class="d-none d-lg-flex col-lg-1"></div>
+          <div class="col-lg-10 col-md-12 bag-primary">
+            <!-- Conteudo -->
+            <div class="d-lg-none d-lg-flex" style="margin-top:20px;">
+              <img src="img/Logo.jpeg" alt="#Erro" class="img-fluid mx-auto">
+            </div>
+            <div class="row mt-2">
+              <div class="col-12">
+                <div class="row mt-3 mb-4">
+
+                  <form class="form-row" name="cad" action="index.html">
+                  <!-- Site -->
+                  <div class="order-1 col-8 invimax-lg ml-2">
+                    <img class="img-fluid" src="img/Logo2.jpeg" alt="Erro">
+                  </div>
+                  <div class="order-2 col-lg-3  col-sm-11 ml-3 mr-3">
+                    <div id="btn1">
+                      <button class="btn texto my-1 link-bottom" type="button">Login</button>
+                    </div>
+                    <div id="btn2">
+                      <button class="btn texto my-1" type="button" name="button" onclick="botao('2');">Cadastro</button>
+                    </div>
+
+                    <!-- Login -->
+                    <input class="texto my-1" type="text" name="login" id="con1" onfocus="this.value=''"  placeholder="Login">
+                    <input class="texto my-1" type="password" name="senha" id="con2" onfocus="this.value=''" placeholder="Senha">
+
+                    <div class="d-flex" id="logar">
+                      <button class="btn texto my-2 link-nav" type="button" name="login" style="background-color:#343a40">Logar</button>
+                    </div>
+
+                    <!-- Cadastro -->
+                    <div id="erro0">
+                      <div id="alert0" class="d-none mt-1">
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                          <i class="fas fa-exclamation-circle" style="font-size: 25px;"></i>   Porfavor, digite um login diferente. Nos já possuimos esse login.
+                        </div>
+                      </div>
+                      <input class="my-1 d-none" type="text" name="cadlogin" id="con3" placeholder="Novo Login" style="width:100%">
+                    </div>
+                    <div id="erro1">
+                      <div id="alert1" class="d-none mt-1">
+                        <div class="alert alert-danger alert-dismissible fade show">
+                          <i class="fas fa-exclamation-circle" style="font-size: 25px;" ></i>   Porfavor, digite uma senha que combine.
+                        </div>
+                      </div>
+                      <input class="my-1 d-none" type="password" name="cadsenha" id="con4" placeholder="Nova Senha" style="width:100%">
+                      <input class="my-1 d-none" type="password" name="cadrsenha" id="con5" placeholder="Repetir Senha" style="width:100%">
+                    </div>
+                    <div id="erro2">
+                      <div id="alert2" class="d-none mt-1">
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                          <i class="fas fa-exclamation-circle" style="font-size: 25px;"></i>   Porfavor, digite um E-mail válido.
+                        </div>
+                      </div>
+                      <input class="my-1 d-none" type="email" name="cademail" id="con6" placeholder="E-mail" style="width:100%">
+                    </div>
+
+                    <div class="d-none" id="cadastrar">
+                      <button class="btn texto my-1 link-nav bag-secondary" type="button" name="button" onclick="cadastro()">Cadastrar</button>
+                    </div>
+                  </div>
+                </form>
+
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="alert alert-danger texto" role="alert">
+                      <i class="fas fa-exclamation-circle"></i> O login e o cadastro ainda não estão funcional. Mas é possivel navegar pelo site sem o login.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+          <!-- Fim conteudo -->
+        </div>
+        <div class="d-none d-lg-flex col-lg-1"></div>
+      </div>
+    </div>
+      <!-- Fim Corpo -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="js/botoes.js"></script>
+      <script src="js/controle.js"></script>
+  </body>
+</html>

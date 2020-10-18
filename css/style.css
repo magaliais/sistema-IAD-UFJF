@@ -1,0 +1,44 @@
+html,h1,h2,h3,h4,h5,h6{font-family:Consolas!important;font-size:1rem!important;}
+body{background-color: #999!important;margin: 0!important;}
+/*Links*/
+.link-bottom:active{outline: none;background-color: red;}
+.link-bottom{color: #f8f9fa!important;text-decoration: none;cursor: pointer;background-color: red;}
+.link-bottom:hover{color: #f8f9fa!important;text-decoration: none;background-color: red;}
+.link-nav:active{outline: none;}
+.link-nav{color: #f8f9fa!important;text-decoration: none;cursor: pointer;}
+.link-nav:hover{color: red!important;text-decoration: none;}
+.cv-link:active{outline: none;}
+.cv-link{color: #b22222!important;text-decoration: none;cursor: pointer;}
+.cv-link:hover{color: #b22222!important;text-decoration: underline;}
+/*invisivel*/
+@media (max-width: 576px) {.invimax-sm{display:none!important;}}
+@media (max-width: 768px) {.invimax-md{display:none!important;}}
+@media (max-width: 992px) {.invimax-lg{display:none!important;}}
+@media (max-width: 1200px) {.invimax-xl{display:none!important;}}
+@media (min-width: 576px) {.invimin-sm{display:none!important;}}
+@media (min-width: 768px) {.invimin-md{display:none!important;}}
+@media (min-width: 992px) {.invimin-lg{display:none!important;}}
+@media (min-width: 1200px) {.invimin-xl{display:none!important;}}
+/*escondido*/
+@media (max-width: 576px) {.hidmax-sm{display:hidden!important;}}
+@media (max-width: 768px) {.hidmax-md{display:hidden!important;}}
+@media (max-width: 992px) {.hidmax-lg{display:hidden!important;}}
+@media (max-width: 1200px) {.hidmax-xl{display:hidden!important;}}
+@media (min-width: 576px) {.hidsin-sm{display:hidden!important;}}
+@media (min-width: 768px) {.hidmin-md{display:hidden!important;}}
+@media (min-width: 992px) {.hidmin-lg{display:hidden!important;}}
+@media (min-width: 1200px) {.hidsin-xl{display:hidden!important;}}
+/*cores*/
+.bag-primary{background-color:#f7f7f7!important;}
+.bag-secondary{background-color:#343a40!important;}
+.bag-black{background-color: #000!important;}
+.bag-branco{background-color: #fff!important;}
+/*estilos*/
+.borda{border-radius: 5px;border-width: 3px!important;border-color: #fff;border-style:groove;}
+.mar-top{margin-top:20%;}
+.texto{width: 100%;color:black; font-family: Consolas;font-size: 1.25em;}
+.texto2{width: 100%;color:black; font-family: Consolas;}
+.texto3{width: 100%;color:black; font-family: Consolas;font-size: 1.3em;}
+.textof{width: 100%;color:black; font-family: Consolas;font-size: 0.75em;}
+.conteudo{display: inline-block;visibility: visible;}
+.conteudo_esc{display: none;visibility: hidden;}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores Vivas | Conscientização humana</title>
+    <script src="js/pace.min.js"></script>
+    <link href="css/pace-theme-center-radar.css" rel="stylesheet" />
+    <script type="text/javascript">
+      window.onload = function(){
+        verificar();
+      }
+    </script>
+    <link rel="shortcut icon" href="../img/mpatapo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/ficha.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Inicio -->
+      <div class="container">
+        <div class="row d-none d-lg-flex noprint">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10 bag-secondary">
+            <img class="img-fluid d-none d-lg-flex" src="../img/tijolo.jpg" alt="Erro">
+            <nav class="navbar navbar-expand bag-secondary d-flex justify-content-around">
+              <a class="navbar-brand link-nav" href="../index.html"><i class="fa fa-home"> Inicio</i></a>
+              <a class="navbar-brand link-nav" href="../historia.html"><i class="fa fa-book"> História</i></a>
+              <a class="navbar-brand link-nav" href="fichas.html"><i class="far fa-id-card"> Fichas</i></a>
+              <a class="navbar-brand link-nav" href="sair" onclick="deslogar();"><i class="fas fa-sign-out-alt"> Sair</i></a>
+            </nav>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+        <div class="row invimin-lg bag-secondary noprint">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-around">
+              <a class="navbar-brand link-nav" href="../index.html"><i class="fa fa-home"> Inicio</i></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars link-nav"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="../historia.html"><i class="fa fa-book"> História</i></a></li>
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="fichas.html"><i class="far fa-id-card"> Fichas</i></a></li>
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="sair"><i class="fas fa-sign-out-alt"> Sair</i></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+    <!-- Fim inicio -->
+    <!-- Inicio Corpo -->
+        <div class="row mb-auto">
+          <div class="d-none d-lg-flex col-lg-1"></div>
+          <div class="col-lg-10 col-md-12 bag-primary">
+            <!-- Conteudo -->
+            <div class="row mt-2 noprint">
+              <div class="col-12">
+                <div class="row mt-3 mb-4">
+                  <!-- Site -->
+                  <div class="col-md-5 col-xs-12">
+                    <div class="row">
+                      <div class="col-2"></div>
+                      <div class="col-8 mx-auto">
+                        <div class="subtex text-center">
+                          <span style="font-size:20px!important;">Montagem da ficha:</span>
+                        </div>
+                      </div>
+                      <div class="col-2"></div>
+                    </div>
+                    <!-- Ficha -->
+                    <div class="row bordinhacurva mx-1 bag-branco">
+                      <div class="col-12 my-2">
+                        <div class="row">
+                          <div class="col-1"></div>
+                          <div class="col-3" id="img1"></div>
+                          <div class="col-3"><img class="img-fluid d-flex mt-3" src="img/logos/ede.jpeg" alt="Erro"></div>
+                          <div class="col-3" id="img3"></div>
+                          <div class="col-1"></div>
+                        </div>
+                        <div class="row bordinha mx-1">
+                          <div class="col-6 bordinhar">
+                            <div class="row">
+                              <div class="col-12">
+                                Mensageiro de
+                              </div>
+                              <div class="col-12 text-center text-monospace" id="GODescolhido">
+
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="col-6 bordinhal">
+                            Opção
+                            <div class="text-center text-monospace" id="opc">
+
+                            </div>
+                          </div>
+
+                          <div class="w-100 bordinhacurva my-1 mx-1" id="imgescolhida" style="background-color:#aeaeae; height:300px!important;">
+                            <div class="text-center" style="margin-top:125px;" id="pux">
+                              <i class="far fa-image" style="font-size:50px;"></i>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="row mb-2 mr-1">
+                              <div class="col-12" id="out6">
+                                <p class="subtex">
+                                  Nome:
+                                </p>
+                                <p class="text-monospace text-truncate" style="text-decoration: underline;">
+                                </p>
+
+                              </div>
+                            </div>
+                            <div class="row mb-2 mx-1 d-flex">
+                              <div class="col-sm-4 col-xl-3 bordinhacurva mt-2 text-monospace text-center" style="padding-left:2px;" id="out00">INT:0</div>
+                              <div class="d-none d-xl-inline col-xl-1"></div>
+                              <div class="col-sm-4 col-xl-3 bordinhacurva mt-2 text-monospace text-center" style="padding-left:2px;" id="out11">FIS:0</div>
+                              <div class="d-none d-xl-inline col-xl-1"></div>
+                              <div class="col-sm-4 col-xl-3 bordinhacurva mt-2 text-monospace text-center" style="padding-left:2px;" id="out22">PS:0</div>
+
+                              <div class="col-sm-4 col-xl-3 bordinhacurva mt-2 text-monospace text-center" style="padding-left:2px;" id="out33">SOC:0</div>
+                              <div class="d-none d-xl-inline col-xl-1"></div>
+                              <div class="col-sm-4 col-xl-3 bordinhacurva mt-2 text-monospace text-center" style="padding-left:2px;" id="out44">MAG:0</div>
+                              <div class="d-none d-xl-inline col-xl-1"></div>
+                              <div class="col-sm-4 col-xl-3 bordinhacurva mt-2 text-monospace text-center" style="padding-left:2px;" id="out55">PM:0</div>
+                            </div>
+                            <div class="row mb-2 mr-1">
+                              <div class="col-12" id="out7">
+                                <span class="subtex">Conhecimentos:</span>
+                              </div>
+                            </div>
+                            <div class="row mb-2 mr-1">
+                              <div class="col-12" id="poder">
+                                <span class="subtex">Poderes:</span>
+                              </div>
+                            </div>
+                            <div class="row mb-2 mr-1">
+                              <div class="col-12" id="idealismo">
+                                <span class="subtex">Idealismo:</span>
+                              </div>
+                            </div>
+                            <div class="row mb-2 mr-1">
+                              <div class="col-12" id="radicalismo">
+                                <span class="subtex">Radicalismo:</span>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="row mb-2 mx-5">
+                          <div class="col-4 textbarrinha">
+                            [&nbsp&nbsp]
+                          </div>
+                          <div class="col-4 textbarrinha">
+                            (&nbsp&nbsp)
+                          </div>
+                          <div class="col-4 textbarrinha">
+                            [&nbsp&nbsp]
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fim Ficha -->
+                  </div>
+                  <div class="col-md-7 col-xs-12">
+                    <div class="row">
+                      <div class="col-1"></div>
+                      <div class="col-10">
+                      <!-- Imputs -->
+
+                      <div class="row">
+                        <div class="textoDeD col-12">
+                          Opções de perfil
+                        </div>
+                        <div class="col-12">
+
+                          <div class="row">
+                            <select class="form-control form-control-lg" onchange="mucdaropc();" id="opcin">
+                              <option value="#">Escolha</option>
+                              <option value="Competitivo">Competitivo</option>
+                              <option value="Cooperativo">Cooperativo</option>
+                              <option value="Isolacionista">Isolacionista</option>
+                              <option value="Rebelde">Rebelde</option>
+                            </select>
+                          </div>
+                          <div class="row mt-3 d-none" id="opcrebelde">
+                            <div class="textoDeD col-12">Opções de valores da ficha</div>
+                            <div class="col-6 mt-3">
+                              <input class="form-check-input" onchange="valores('2');" type="radio" name="ficha" id="soc2" value="soc2int1">
+                              <label class="form-check-label" for="soc2">
+                                Soc + 2 e Int + 1
+                              </label>
+                            </div>
+                            <div class="col-6 mt-3">
+                              <input class="form-check-input" onchange="valores('1');" type="radio" name="ficha" id="soc1" value="soc1int2">
+                              <label class="form-check-label" for="soc1">
+                                Soc + 1 e Int + 2
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-none" id="opcadicional">
+                          </div>
+                      <!-- textos -->
+                      <div class="textoDeD col-12 mt-3">
+                        Informação adicional
+                      </div>
+                        <div class="row">
+                          <input class="texto mt-3" type="text" name="nome" id="in6" onfocus="this.value=''" onchange="mudar('6');"  placeholder="Nome">
+                          <div class="col-12 mt-3">
+                            <input type="file" accept="image/*" class="custom-file-input" id="imagem">
+                            <label class="custom-file-label" for="validatedCustomFile">Escolha uma imagem...</label>
+                          </div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-12">
+                            <div class="alert alert-danger d-none" role="alert" id="alertopcin">
+                              <i class="fas fa-exclamation-circle" style="font-size: 25px;"></i>   Por favor, Escolha uma opção de perfil.
+                            </div>
+                            <div class="alert alert-danger d-none" role="alert" id="alertnome">
+                              <i class="fas fa-exclamation-circle" style="font-size: 25px;"></i>   Por favor, Escolha um nome.
+                            </div>
+                            <div class="alert alert-danger d-none" role="alert" id="alertopcines">
+                              <i class="fas fa-exclamation-circle" style="font-size: 25px;"></i>   Por favor, Escolha uma opção de perfil adicional.
+                            </div>
+                            <div class="alert alert-danger d-none" role="alert" id="alertopcinesreb">
+                              <i class="fas fa-exclamation-circle" style="font-size: 25px;"></i>   Por favor, Escolha uma opção de perfil adicional e um valor para ficha.
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <button class="btn texto my-1 w-100 disabled" id="siteC" onclick="addContaaux();" type="button">
+                              Salve sua ficha no site <i class="fas fa-cloud"></i>
+                            </button>
+                          </div>
+                          <div class="col-6">
+                            <button class="btn texto my-1 w-100" onclick="salvaFicha();" type="button">
+                              Salve sua ficha  <i class="far fa-save"></i>
+                            </button>
+                          </div>
+                          <div class="col-6">
+                            <button class="btn texto my-1 w-100" onclick="" type="button">
+                              Importe sua ficha  <i class="fas fa-file-import"></i>
+                            </button>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Fim Imputs -->
+
+                    </div>
+                  </div>
+
+                  <div class="col-1"></div>
+                </div>
+              </div>
+              <!-- Fim conteudo -->
+            </div>
+          </div>
+        <div class="d-none d-lg-flex col-lg-1"></div>
+      </div>
+      <div class="row print" style="display: none;">
+        <div class="col-12">
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Fim Corpo -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="js/ficha.js"></script>
+      <script src="js/controle.js"></script>
+  </body>
+</html>

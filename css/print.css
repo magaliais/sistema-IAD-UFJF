@@ -1,0 +1,31 @@
+@media print{
+  div > .noprint{
+    display: none;
+  }
+  div > .print{
+    display: block!important;
+    margin: 0.5cm;
+    margin-top: 1cm!important;
+    float: none !important;
+    width: auto;
+    height: auto;
+  }
+  html{
+    position: relative;
+    min-height: 100%;
+  }
+  * {
+    margin: 0;
+    color:#000 !important;
+    text-shadow:none !important;
+    filter:none !important;
+    -ms-filter:none !important;
+  }
+  .print{
+    display: block!important;
+    float: none !important;
+    width: auto;
+    height: auto;
+  }
+  .noprint{}
+}

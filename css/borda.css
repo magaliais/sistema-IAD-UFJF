@@ -1,0 +1,5 @@
+.borda{
+    -webkit-text-stroke-width: 2px!important; /* largura da borda */
+    -webkit-text-stroke-color: #000!important; /* cor da borda */
+    font-size:1.5em!important; color: #fff;
+}

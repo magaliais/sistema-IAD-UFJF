@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cores Vivas | Conscientização humana</title>
+    <script src="js/pace.min.js"></script>
+    <link href="css/pace-theme-center-radar.css" rel="stylesheet" />
+    <script type="text/javascript">
+      window.onload = function(){
+          if (localStorage.getItem("VET") == null || localStorage.getItem("VET") == "[]") {
+            semFicha();
+          }else{
+            carregando();
+          }
+        }
+    </script>
+    <link rel="shortcut icon" href="../img/mpatapo.png"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Inicio -->
+      <div class="container">
+        <div class="row d-none d-lg-flex noprint">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10 bag-secondary ">
+            <img class="img-fluid d-none d-lg-flex" src="../img/tijolo.jpg" alt="Erro">
+            <nav class="navbar navbar-expand bag-secondary d-flex justify-content-around">
+              <link rel="stylesheet" href="../css/print.css">
+              <a class="navbar-brand link-nav" href="../index.html"><i class="fa fa-home"> Inicio</i></a>
+              <a class="navbar-brand link-nav" href="../historia.html"><i class="fa fa-book"> História</i></a>
+              <a class="navbar-brand link-nav" href="fichas.html"><i class="far fa-id-card"> Fichas</i></a>
+              <a class="navbar-brand link-nav" href="sair" onclick="deslogar();"><i class="fas fa-sign-out-alt"> Sair</i></a>
+            </nav>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+        <div class="row invimin-lg bag-secondary noprint">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-around">
+              <a class="navbar-brand link-nav" href="../index.html"><i class="fa fa-home"> Inicio</i></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars link-nav"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="../historia.html"><i class="fa fa-book"> História</i></a></li>
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="fichas.html"><i class="far fa-id-card"> Fichas</i></a></li>
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="sair"><i class="fas fa-sign-out-alt"> Sair</i></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+    <!-- Fim inicio -->
+    <!-- Inicio Corpo -->
+        <div class="row mb-auto noprint">
+          <div class="d-none d-lg-flex col-lg-1"></div>
+          <div class="col-lg-10 col-md-12 bag-primary">
+            <!-- Conteudo -->
+            <div class="row mt-2">
+              <div class="col-12">
+                <div class="row mt-3 mb-4">
+                  <!-- Site -->
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-3"></div>
+                      <div class="col-6">
+                        <div id="mesa" class="d-none">
+                          <div id="mesas">
+                            <img class="img-fluid rounded mx-auto d-block" src="img/mesa.jpeg" alt="Erro">
+
+                            <!-- Fazer 16 img dos buzios + mesa -->
+
+                          </div>
+                          <div class="texto3 d-none" id="fechada">
+                            Seu jogo diz que seu espiríto é mensageiro, mas não se manifesta em transe.
+                            Jogue novamente.
+                          </div>
+                          <button class="btn texto my-2" type="button" name="button" onclick="giraP();"> Rode</button>
+                        </div>
+                      </div>
+                      <div class="col-3"></div>
+                    </div>
+                    <div>
+                      <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-10">
+                          <!-- Ficha deus -->
+                          <div id="gods">
+                          <div class="d-none" id="deus1">
+                            <!--<div class="row">
+                              <div class="col-12 texto3 text-center">
+                                Abertas ( 1 )  Fechadas ( 15 )
+                              </div>
+                            </div>-->
+                            <img img-fluid class="w-100 my-2" src="img/exu.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Exú
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b><br>
+
+O que sua personagem faz, qual é a sua forma de ativismo diante de
+situações que ameaçam o meio ambiente,a justiça social, a
+diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Exu, um ESPIRITO NEGOCIADOR, que atua nas ações humanas de negociação(diplomacia,
+mediação de conflitos, comércio, trapaças, brincadeiras, comunicação) e nas dualidades da natureza (luz/sombra,
+noite/dia, caos/ordem). É o Orixá dos caminhos e da comunicação, mensageiro que circula entre o Orum (Morada dos orixás) e o Ayê (moradas dos humanos).<br><br>
+<pre>
+<b>Cores:</b> todas, incluindo preto e vermelho.
+<b>Dia:</b> Segunda
+<b>Metais:</b> ferro e bronze.
+<b>Elementos:</b> todos, mas principalmente fogo.
+<b>Domínio:</b> comunicação, viagens, estradas e encruzilhadas.
+<b>Ervas:</b> folha de fogo (Clidemia octona).
+<b>Quizilas:</b> cabeças e pés de qualquer bicho.
+<b>Comida:</b> padê(farofa) de farinha de mandioca.
+<b>Tempero:</b> Dendê
+<b>Ferramenta:</b> Ogó (bastão em forma de falo com cabaças).
+<b>Toque:</b> Ilú.
+
+<b>Poderes:</b>
+
+- <b>Projeção astral:</b> comunicação psíquica com outros espíritos
+ e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Conjuração:</b> convocação de outros espíritos para troca
+ de favores.
+
+- <b>Sincronicidade:</b> manipulação de eventos, sorte e azar,
+ causa e feito.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus2">
+                            <img img-fluid class="w-100 my-2" src="img/ogum.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Ogum
+                            </div>
+                            <div class="texto2">
+
+<b>Conceito:</b> <br>
+
+O que sua personagem faz, qual é a sua forma de ativismo diante de situações que ameaçam o meio ambiente,
+a justiça social, a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Ogum, um ESPÍRITO COMBATENTE que atua nas ações humanas de conflito (guerras,julgamentos,competições) e nos aspectos intempestivos da natureza(tempestades, terremotos,erupções). Orixá da guerra e da forja.<br><br>
+<pre>
+<b>Cor:</b> Azulão e variantes; verde em alguns axés.
+<b>Dia:</b> Quinta
+<b>Metal:</b> Ferro
+<b>Elemento:</b> Terra e metais.
+<b>Domínio:</b> guerra, tecnologia, estradas e matas.
+<b>Adorno:</b> folhas de palma desfiadas
+<b>Ervas:</b> vence demanda (Justicia gendarusa)
+<b>Quizilas:</b> Quiabo, feijão preto, camarão
+<b>Comida:</b> eran petecê (carne fresca frita no azeite de dendê)
+<b>Tempero:</b> dendê
+<b>Ferramenta:</b> Adaga
+<b>Toque:</b> adarrum
+
+<b>Poderes:</b>
+
+- <b>Projeção astral:</b> comunicação psíquica com outros espíritos
+ e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Transmutação:</b> manipulação de metais
+
+- <b>Empatia:</b> manipulação de emoções
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus3">
+                            <img img-fluid class="w-100 my-2" src="img/omulu.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Omulu
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b><br>
+
+O que sua personagem faz, qual é sua forma de ativismo diante de situações que ameaçam o meio ambiente, a justiça social,
+a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Omulu, um ESPÍRITO PROVEDOR, que atua nas ações humanas de solidariedade (medicina, psicologia, caridade)
+e nos aspectos construtivos da natureza (fertilidade, crescimento). É o Orixá das doenças e da medicina.<br><br>
+<pre>
+<b>Cores:</b> Preto, branco e vermelho.
+<b>Dia:</b> Segunda.
+<b>Metais:</b> Estanho e zinco.
+<b>Elementos:</b> Terra.
+<b>Domínio:</b> Saúde e morte, hospitais e cemitério.
+<b>Ervas:</b> Canela de velho (Miconia albicans).
+<b>Quizilas</b>: Pipoca, feijão preto, siri, camarão, abacaxi.
+<b>Comida:</b> deburu (pipoca estourada em areia da praia enfeitada com
+fatias de coco); tutu (purê) de feijão.
+<b>Tempero:</b> Dendê.
+<b>Ferramenta:</b> Xaxará (bastão) ou lança.
+<b>Toque:</b> Opanijé.
+
+<b>Poderes:</b>
+
+- <b>Projeção Astral:</b> Comunicação psíquica com outros espíritos
+ e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Esconjuração:</b> Detecção e quebra de outros efeitos mágicos.
+
+- <b>Vitalidade:</b> Diagnóstico e tratamento de ferimentos e doenças
+ agudas e infecto-contagiosas.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus4">
+                            <img img-fluid class="w-100 my-2" src="img/oxossi.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Oxóssi
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b><br>
+
+O que sua personagem faz, qual é a sua forma de ativismo diante de situações que ameaçam o meio ambiente,
+a justiça social, a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Oxóssi, um ESPÍRITO PROVEDOR, que atua nas ações humanas de solidariedade (medicina, psicologia, caridade) e nos aspectos construtivos da natureza (fertilidade, crescimento). Orixá da caça, das matas, da agricutura e da fartura.<br><br>
+<pre>
+<b>Cor:</b> Azul turquesa ou verda
+<b>Dia:</b> Quinta
+<b>Metal:</b> Latão
+<b>Elemento:</b> Ar e terra
+<b>Domínio:</b> cultivos, caça , matas e campos.
+<b>Ervas:</b> Panacéia (Gomphrena arborescens)
+<b>Quizilas:</b> mel, miúdos, bucho.
+<b>Comida:</b> abadô, (arrumação) de axoxô (milho vermelho cozido)
+decorado com fatias de coco, frutas e feijão fradinho torrado.
+<b>Tempero:</b> dendê
+<b>Ferramenta:</b> ofá (arco e flecha)
+<b>Toque:</b> agueré
+
+<b>Poderes:</b>
+
+- <b>Projeção astral:</b> comunicação psíquica com outros espíritos
+ e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Transmutação:</b> manipulação de alimentos.
+
+- <b>Sincronicidade:</b> manipulação de eventos, sorte e azar,
+ causa e feito.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus5">
+                            <img img-fluid class="w-100 my-2" src="img/oxum.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Oxum
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b><br>
+
+O que sua personagem faz, qual é sua forma de ativismo diante de situações que ameaçam o meio ambiente, a justiça social,
+a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Oxum, um ESPÍRITO PROVEDOR, que atua nas ações humanas de solidariedade (medicina, psicologia, caridade)
+e nos aspectos construtivos da natureza (fertilidade, crescimento). É o Orixá da riqueza, da fecundidade e da beleza, mãe do ouro e das
+águas calmas.<br><br>
+<pre>
+<b>Cores:</b> Dourado e amarelo e variantes.
+<b>Metais:</b> Ouro.
+<b>Elementos:</b> Água.
+<b>Domínio:</b> Amor, fertilidade, rios calmos e águas doces.
+<b>Ervas:</b> Oxibatá (Nymphaea).
+<b>Quizilas:</b> Passarinha (baço), tangerina.
+<b>Comida:</b> Omolocum (feijão fradinho com camarões e ovos
+cozidos descascados) e ipeté (purê de inhame, camarão e gengibre)
+<b>Tempero:</b> Dendê.
+<b>Ferramenta:</b> Abebê (espelho).
+<b>Toque:</b> Ijexá.
+
+<b>Poderes:</b>
+
+- <b>Projeção Astral:</b> Comunicação psíquica com outros espíritos
+ e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Empatia:</b> Manipulação de emoções.
+
+- <b>Vitalidade:</b> Diagnóstico e tratamento de ferimentos e doenças
+ agudas e infecto-contagiosas.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus6">
+                            <img img-fluid class="w-100 my-2" src="img/logunede.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Logun-Edê
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b> <br>
+
+O que sua personagem faz, qual é a sua forma de ativismo diante de situações que ameaçam o meio ambiente,
+a justiça social, a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Logun-Edê, em ESPIRÍTO NEGOCIADOR, que atua nas ações humanas de negociação (diplomacia, mediação de conflitos, comércio, trapaças, brincadeiras, comunicação) e nas dualidades da natureza (luz/sombra, noite/dia, caos/ordem). Orixá da caça, da pesca e da juventude, filho de Oxóssi e Oxum, ponte entre masculino e feminino.<br><br>
+<pre>
+<b>Cor:</b> Azul turquesa e Amarelo
+<b>Dia:</b> Quinta
+<b>Metal:</b> Latão e Ouro
+<b>Elemento:</b> Terra e água.
+<b>Domínio:</b> Beleza, pesca, caça, matas e rios.
+<b>Ervas:</b> Panacéia (Gomphrena arvorescens) e oxibatá (Nymphaea)
+<b>Quizilas:</b> Mel, Bucho, miúdos, baço e tangerina.
+<b>Comida:</b> feijão fradinho, axoxô (milho vermelho cozido),
+omolocum (feijão fradinho com camarões e ovos cozidos
+descascados), ipeté (purê de inhame,camarão e gengibre)
+<b>Tempero:</b> dendê
+<b>Ferramenta:</b> Abebê (espelho) e Ofá (arco e flecha)
+<b>Toque:</b> Agueré e Ijexá
+
+<b>Poderes:</b>
+
+- <b>Projeção astral:</b> comunicação psíquica com outros espíritos
+e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Empatia:</b> manipulação de emoções
+
+- <b>Sincronicidade:</b> manipulação de eventos, sorte e azar,
+ causa e efeito.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus7">
+                            <img img-fluid class="w-100 my-2" src="img/oxumare.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Oxumarê
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b><br>
+
+O que sua personagem faz, qual é sua forma de ativismo diante de situações que ameaçam o meio ambiente, a justiça social,
+a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Oxumarê, um ESPÍRITO REVELADOR, que atua nas ações humanas de criatividade (artes, ciências,
+tecnologias) e nos aspectos transformadores da natureza (adaptações, evolução, morte). É o Orixá da transformação, da inovação
+e da adaptação.<br><br>
+<pre>
+<b>Cores:</b> Preto e amarelo ou verde e amarelo e arco-íris.
+<b>Dia:</b> Terça.
+<b>Elementos:</b> Terra e água.
+<b>Domínio:</b> Artes, transformações e movimentos, arco-íris, chuva.
+<b>Ervas:</b> Jibóia (epipremnum pinnatum).
+<b>Quizilas:</b> Abacaxi e carambola.
+<b>Comida:</b> Batata doce amassada em forma de cobra e feijão fradinho.
+<b>Tempero:</b> Dendê.
+<b>Ferramenta:</b> Lança com cobras.
+<b>Toque:</b> Sató.
+
+<b>Poderes:</b>
+
+- <b>Projeção Astral:</b> Comunicação psíquica com outros espíritos
+e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Cognição:</b> Clarividências, sonhos, clauriaudiências,
+ psicografia.
+
+- <b>Ilusão:</b> Manipulação de sentidos.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus8">
+                            <img img-fluid class="w-100 my-2" src="img/oxaguia.jpeg" alt="Erro">
+                          <div class="texto3">
+                            Oxaguiã
+                          </div>
+                            <div class="texto2">
+<b>Conceito:</b> <br>
+
+O que sua personagem faz, qual é a sua forma de ativismo diante de situações que ameaçam o meio ambiente,
+a justiça social, a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Oxaguiã, um ESPÍRITO NEGOCIADOR, que atua nas ações humanas de negociação (diplomacia,mediação de conflitos, comércio, trapaças, brincadeiras, comunicação) e nas dualidades da natureza (luz/sombra, noite/dia, caos/ordem). Orixá da cultura material e das criações humanas, inventor do pilão que transforma o inhame em alimento.<br><br>
+<pre>
+<b>Cor:</b> Branco e Azul Claro
+<b>Dia:</b> Sexta
+<b>Metal:</b> Aço e Prata
+<b>Elemento:</b> Ar e água
+<b>Domínio:</b> Cultura material, céu, nuvens e sol.
+<b>Ervas:</b> Ipê branco (Tabebuia roseo-alba)
+<b>Quizilas:</b> Abóbora
+<b>Comida:</b> Inhame pilado servido em louça branca.
+<b>Tempero:</b> Azeite de oliva ou banha.
+<b>Ferramenta:</b> Adaga e escudo
+<b>Toque:</b> adarrum
+
+<b>Poderes:</b>
+
+- <b>Projeção astral:</b> comunicação psíquica com outros espíritos
+e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Empatia:</b> manipulação de emoções
+
+- <b>Esconjuração:</b> detecçãp e quebra de outros efeitos mágicos
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus9">
+                            <img img-fluid class="w-100 my-2" src="img/yemanja.jpeg" alt="Erro">
+                            <div class="texto3">
+                                Yemanjá
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b><br>
+
+O que sua personagem faz, qual é sua forma de ativismo diante de situações que ameaçam o meio ambiente, a justiça social,
+a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Yemanjá, um ESPÍRITO PROVEDOR, que atua nas ações humanas de solidariedade (medicina, psicologia, caridade)
+e nos aspectos construtivos da natureza (fertilidade, crescimento). É o Orixá das águas salgadas, da família, da maternidade e das cabeças dos
+humanos (ori).<br><br>
+<pre>
+<b>Cores:</b> Azul ou verde claros, branco, cristal e prateado.
+<b>Dia:</b> Sábado.
+<b>Metais:</b> Prata.
+<b>Elementos:</b> Água.
+<b>Domínio:</b> Família, lideranças, mares e oceanos.
+<b>Ervas:</b> Macaçá (Aeollanthus suaveolens).
+<b>Quizilas:</b> Camarão.
+<b>Comidas:</b> Ebôya (fava ou milho cozifo e refogado com cebola,
+camarão, azeite de dendê).
+<b>Tempero:</b> Dendê.
+<b>Ferramenta:</b> Abebê (espelho).
+<b>Toque:</b> Ilu.
+
+<b>Poderes:</b>
+
+- <b>Projeção Astral:</b> Comunicação psíquica com outros espíritos
+e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Empatia:</b> Manipulação de emoções.
+
+- <b>Esconjuração:</b> Detecção e quebra de possessões espirituais.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus10">
+                            <img img-fluid class="w-100 my-2" src="img/oxalufa.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Oxalufã
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b> <br>
+
+O que sua personagem faz, qual é a sua forma de ativismo diante de situações que ameaçam o meio ambiente,
+a justiça social, a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Ogum, um ESPÍRITO REVELADOR, que atua nas ações humanas de criatividade (artes, ciências, tecnologias) e nos aspectos transformadores da natureza (adaptações, evolução, morte). Orixá da vida e da morte, senhor dos segredos e da sabedoria.<br><br>
+<pre>
+<b>Cor:</b> Branco e prateado
+<b>Dia:</b> Sexta
+<b>Metal:</b> Aço e Prata
+<b>Elemento:</b> Ar e água
+<b>Domínio:</b> Vida e morte, mistérios, céu, nuvens e ar.
+<b>Ervas:</b> Manjericão Branco (Ocimum basilicum)
+<b>Quizilas:</b> Abóbora
+<b>Comida:</b> comidas brancas, preferência por milho branco cozido e sem
+tempero servido em louças brancas.
+<b>Tempero:</b> Azeite de Oliva ou banha.
+<b>Ferramenta:</b> Opaxorô (cajado)
+<b>Toque:</b> Ibi
+
+<b>Poderes:</b>
+
+- <b>Projeção astral:</b> comunicação psíquica com outros espíritos
+e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Empatia:</b> manipulação de emoções
+
+- <b>Cognição:</b> clarividências, sonhos, clariaudiências,
+ psicografias.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus11">
+                            <img img-fluid class="w-100 my-2" src="img/oya.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Oyá-Iansã
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b><br>
+
+O que sua personagem faz, qual é sua forma de ativismo diante de situações que ameaçam o meio ambiente, a justiça social,
+a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Oyá-Iansã, um ESPÍRITO COMBATENTE, que atua nas ações humanas de conflito (guerras, julgamentos, competições)
+e nos aspectos intempestivos da natureza (tempestades, terremotos, erupções). É o Orixá dos ventos e tempestades, senhora dos espíritos dos mortos
+(eguns) e das paixões.<br><br>
+<pre>
+<b>Cores:</b> Vermelho e variantes, coral, rosa.
+<b>Dia:</b> Quarta.
+<b>Metais:</b> Cobre e prata.
+<b>Elementos:</b> Ar em moviento e fogo.
+<b>Domínio:</b> Paixões, intempéries, bambuzais, ventanias, cemitérios.
+<b>Ervas:</b> Erva-prata (Paronychia).
+<b>Quizilas:</b> Abóbora, carneiro.
+<b>Comida:</b> Acarajé (bolinho redondo de massa de feijão fradinho
+frita em dendê).
+<b>Tempero:</b> Dendê.
+<b>Ferramenta:</b> Adaga e eruquerê ou eruxim (espanta-moscas
+de rabo de cavalo)
+<b>Toque:</b> Adarô.
+
+<b>Poderes:</b>
+
+- <b>Projeção Astral:</b> Comunicação psíquica com outros espíritos
+e pessoas vivas e viagem por outros planos de existência.
+
+- <b>Esconjuração:</b> Exorcismo de espíritos.
+
+- <b>Psicocinese:</b> Manipulação de eletricidade e deslocamento de ar.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus12">
+                            <img img-fluid class="w-100 my-2" src="img/xango.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Xangô
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b><br>
+
+O que sua personagem faz, qual é a sua forma de ativismo diante de situações que ameaçam o meio ambiente,
+a justiça social, a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Ogum, um ESPÍRITO COMBATENTE que atua nas ações humanas de conflito (guerras,julgamentos,competições) e nos aspectos intempestivos da natureza(tempestades, terremotos,erupções). Orixá das trovoadas, dos vulcões e da lava, das pedreiras, o rei que aplica a justiça e provê abundância.<br>
+<pre>
+<b>Cor:</b> Branco e vermelho, ou branco e marrom.
+<b>Dia:</b> Quarta
+<b>Metal:</b> Bronze
+<b>Elemento:</b> Fogo e Terra
+<b>Domínio:</b> Justiça, lideranças, vulcões e pedreiras.
+<b>Ervas:</b> Elevante (Mentha viridis)
+<b>Quizilas:</b> Pipoca, tangerina, siri, feijão preto.
+<b>Comida:</b> Amalá (quiabo cortado, cebola, camarão)
+<b>Tempero:</b> dendê
+<b>Ferramenta:</b> Oxé (machadinha de gume duplo)
+<b>Toque:</b> Alujá
+
+<b>Poderes:</b>
+
+  - <b>Projeção astral:</b> comunicação psíquica com outros espíritos
+  e pessoas vivas e viagem por outros planos de existência.
+
+  - <b>Empatia:</b> manipulação de emoções
+
+  - <b>Psicocinese:</b> manipulação de fogo e movimento (telecinese)
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus13">
+                            <img img-fluid class="w-100 my-2" src="img/nana.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Nanã
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b><br>
+
+O que sua personagem faz, qual é sua forma de ativismo diante de situações que ameaçam o meio ambiente, a justiça social,
+a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Nanã, um ESPÍRITO REVELADOR, que atua nas ações humanas de criatividade (artes, ciências, tecnologias)
+e nos aspectos transformadoes da natureza (adaptações, avolução, morte). Orixá da lama a partir da qual Oxalufã criou a vida humana,
+a que acolhe os recém mortos e os encaminha para uma nova vida.<br><br>
+<pre>
+<b>Cores:</b> Branco e roxo ou branco e azul.
+<b>Dia:</b> Terça.
+<b>Metais:</b> Repele todos.
+<b>Elementos:</b> Terra e água.
+<b>Domínio:</b> Vida e morte, lama, pântanos, águas paradas.
+<b>Ervas:</b> Mostarda (Brassica, Sinapis).
+<b>Quizilas:</b> Siri, camarão.
+<b>Comida:</b> Folha de mostarda refogada.
+<b>Tempero:</b> Dendê.
+<b>Ferramenta:</b> Ibiri (bastão curvo).
+<b>Toque:</b> Ilu.
+
+<b>Poderes:</b>
+
+  - <b>Projeção Astral:</b> Comunicação psíquica com outros espíritos
+   e pessoas vivas e viagem por outros planos de existência.
+
+  - <b>Conjuração:</b> Controle de espíritos desencarnados.
+
+  - <b>Cognição:</b> Clarividências, sonhos, clariaudiências,
+   psicografia.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus14">
+                            <img img-fluid class="w-100 my-2" src="img/ossae.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Ossãe
+                            </div>
+                            <div class="texto2">
+<b>Conceito:</b> <br>
+
+O que sua personagem faz, qual é a sua forma de ativismo diante de situações que ameaçam o meio ambiente,
+a justiça social, a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Ogum, um ESPÍRITO PROVEDOR, que atua nas ações humanas de solidariedade (medicina, psicologia, cariade) e nos aspectos construtivos da natureza (fertilidade, crescimento). Orixá das ervas e seus poderes (ewé) mágicos e curativos.<br><br>
+<pre>
+<b>Cor:</b> Branco e verde claro
+<b>Dia:</b> Quinta
+<b>Metal:</b> Ferro, prata, bronze, estanho e latão
+<b>Elemento:</b> Terra e ar.
+<b>Domínio:</b> Saúde, fármacos, folhas e matas.
+<b>Adorno:</b> folhas
+<b>Ervas:</b> Peregum (Dracena)
+<b>Quizilas:</b> Abacaxi
+<b>Comida:</b> Feijão, farofa e fumo de rolo.
+<b>Tempero:</b> dendê
+<b>Ferramenta:</b> Folhas, Opaorum (haste com folhas e passáro)
+<b>Toque:</b> Agueré
+
+<b>Poderes:</b>
+
+  - <b>Projeção astral:</b> comunicação psíquica com outros espíritos
+   e pessoas vivas e viagem por outros planos de existência.
+
+  - <b>Transmutação:</b> manipulação de metais
+
+  - <b>Vitalidade:</b> diagnóstico e tratamento de ferimentos e doenças
+   crônicas e hereditárias.
+                            </div>
+                          </div>
+                          <div class="d-none" id="deus15">
+                            <img img-fluid class="w-100 my-2" src="img/ewa.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Ewá
+                            </div>
+                            <div class="texto2">
+    <b>Conceito:</b><br>
+
+    O que sua personagem faz, qual é sua forma de ativismo diante de situações que ameaçam o meio ambiente, a justiça social,
+    a diversidade cultural e a viabilidade econômica.
+
+    Quem se manifestou em você foi Ewá, um ESPÍRITO REVELADOR, que atua nas ações humanas de criatividade (artes, ciências, tecnologias)
+    e nos aspectos transformadores da natureza (adaptaç]ões, evolução, morte). Orixá das possibilidades e do conhecimento, serpente dos
+    mistérios e senhora do céu cor de rosa.<br><br>
+    <pre>
+    <b>Cores:</b> Coral, rosa, vermelho.
+    <b>Dia:</b> Terça.
+    <b>Metais:</b> Ouro, cobre e prata.
+    <b>Elementos:</b> Ar e água.
+    <b>Domínio:</b> Conhecimento, criatividade, neblinas e cemitérios.
+    <b>Ervas:</b> Língua de cobra (Ophioglossum).
+    <b>Quizilas:</b> Quiabo, abóbora, abacaxi.
+    <b>Comida:</b> Feijão Fradinho e farofa de ovo.
+    <b>Tempero:</b> Dendê.
+    <b>Ferramenta:</b> Lança ou ofá e adaga e cabaça.
+    <b>Toque:</b> Sató.
+
+    <b>Poderes:</b>
+
+      - <b>Projeção Astral:</b> Comunicação psíquica com outros espíritos
+       e pessoas vivas e viagem por outros planos de existência.
+
+      - <b>Conjuração:</b> Convocação de outros espíritos para troca de favores.
+
+      - <b>Sincronidade:</b> Manipulação de eventos, sorte e azar; causa - e efeito.
+                            </div>
+                          </div>
+
+                          <div class="d-none" id="deus16">
+                            <img img-fluid class="w-100 my-2" src="img/oba.jpeg" alt="Erro">
+                            <div class="texto3">
+                              Obá
+                            </div>
+                            <div class="texto2">
+    <b>Conceito:</b><br>
+
+O que sua personagem faz, qual é sua forma de ativismo diante de situações que ameaçam o meio ambiente, a justiça social,
+a diversidade cultural e a viabilidade econômica.
+
+Quem se manifestou em você foi Obá, um ESPÍRITO COMBATENTE, que atua nas açõs humanas de conflito (guerras, julgamentos, competições)
+e nos aspectos intempestivos da natureza (tempestades, terremotos, arupções). orixá do amor conjugal da lealdade e do sucesso profissional,
+senhora das águas revoltas.<br><br>
+    <pre>
+    <b>Cores:</b> Amarelo, vermelho e larajas.
+    <b>Dia:</b> Quarta.
+    <b>Metais:</b> Cobre, platina e prata.
+    <b>Elementos:</b> Fogo.
+    <b>Domínio:</b> Carreiras, casamentos, amizades, fogo e rios revoltos.
+    <b>Ervas:</b> Tanaceto (Tanacetum vulgare).
+    <b>Quizilas:</b> Abóbora.
+    <b>Comida:</b> Milho cozido com amalá (quiabo cortado, cebola, camarão).
+    <b>Tempero:</b> Dendê.
+    <b>Ferramenta:</b> Adaga e escudo.
+    <b>Toque:</b> Ilu e Adarrum.
+
+    <b>Poderes:</b>
+
+      - <b>Projeção Astral:</b> Comunicação psíquica com outros espíritos
+       e pessoas vivas e viagem por outros planos de existência.
+
+      - <b>Empatia:</b> Manipulação de emoções.
+
+      - <b>Psicocinese:</b> Manipuçlação de fogo ou água.
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Fim Ficha deus -->
+                        <!-- Alert -->
+                        <div class="row">
+                          <div class="col-12 mt-3">
+                            <div id="alerta" class="d-none">
+                              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <i style="font-size:25px;" class="fas fa-exclamation-triangle"></i> Faça uma escolha.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 mt-3">
+                            <div id="alertaopc" class="d-none">
+                              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <i style="font-size:25px;" class="fas fa-exclamation-triangle"></i> Clique em opções para poder fazer uma escolha.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Fim Alert -->
+                        <!-- Opções -->
+                        <form class="form-row" name="escolha" action="index.html">
+                          <div class="d-none" id="opcoes">
+                            <div class="row">
+                              <div class="conteudo col-xs-6 col-md-4" id="op0"></div>
+                              <div class="conteudo col-xs-6 col-md-4" id="op1"></div>
+                              <div class="conteudo col-xs-6 col-md-4" id="op2"></div>
+                              <div class="conteudo col-xs-6 col-md-4" id="op3"></div>
+                              <div class="conteudo col-xs-6 col-md-4" id="op4"></div>
+                              <div class="conteudo col-xs-6 col-md-4" id="op5"></div>
+                            </div>
+                          </div>
+                          <!-- Fim Opções -->
+                          <!-- Next -->
+                          <div class="d-none" id="next">
+                            <div class="row" >
+                              <div class="col-md-4 col-xm-12 mt-2" id="divbtn">
+                                <button class="btn w-100" id="btnrol" type="button" name="button" onclick="gira();">Rode de novo</button>
+                              </div>
+                              <div class="col-md-4 col-xm-12 mt-2 d-none" id="divbtnop">
+                                <button type="button" class="btn w-100" name="button" onclick="opc(1);">Opções </button>
+                              </div>
+                              <div class="col-md-4 col-xm-12 mt-2" id="espa">
+
+                              </div>
+                              <div class="col-md-4 col-xm-12 mt-2" id="btnpasaux">
+                                <button class="btn w-100" id="btnpas" type="button" name="button" onclick="salvedeus();">Passe<i class="fa fa-arrow-right"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                          <!-- Fim Next -->
+                        </div>
+                      <div class="col-1"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- Fim conteudo -->
+        </div>
+        <div class="d-none d-lg-flex col-lg-1"></div>
+      </div>
+      <div class="row print" style="display: none;">
+        <div class="col-12">
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Fim Corpo -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="js/save.js"></script>
+      <script src="js/functions.js"></script>
+  </body>
+</html>

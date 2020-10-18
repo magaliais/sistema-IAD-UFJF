@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/pace.min.js"></script>
+    <link rel="stylesheet" href="../css/print.css">
+    <link href="css/pace-theme-center-radar.css" rel="stylesheet" />
+    <script type="text/javascript">
+      window.onload = function() {
+        caregamentoVisual();
+      }
+    </script>
+    <title noprint>Cores Vivas | Conscientização humana</title>
+    <link rel="shortcut icon" href="../img/mpatapo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/ficha.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Inicio -->
+      <div class="container">
+        <div class="row d-none d-lg-flex noprint">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10 bag-secondary">
+            <img class="img-fluid d-none d-lg-flex" src="../img/tijolo.jpg" alt="Erro">
+            <nav class="navbar navbar-expand bag-secondary d-flex justify-content-around">
+              <a class="navbar-brand link-nav" href="../index.html"><i class="fas fa-home"> Inicio</i></a>
+              <a class="navbar-brand link-nav" href="../historia.html"><i class="fas fa-book"> História</i></a>
+              <a class="navbar-brand link-nav" href="fichas.html"><i class="far fa-id-card"> Fichas</i></a>
+              <a class="navbar-brand link-nav" href="sair"><i class="fas fa-sign-out-alt"> Sair</i></a>
+            </nav>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+        <div class="row invimin-lg bag-secondary noprint">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-around">
+              <a class="navbar-brand link-nav" href="../index.html"><i class="fas fa-home"> Inicio</i></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars link-nav"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="../historia.html"><i class="fas fa-book"> História</i></a></li>
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="fichas.html"><i class="far fa-id-card"> Fichas</i></a></li>
+                  <li class="nav-item"><a class="navbar-brand link-nav" href="sair"><i class="fas fa-sign-out-alt"> Sair</i></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+    <!-- Fim inicio -->
+    <!-- Inicio Corpo -->
+      <div class="row mb-auto">
+        <div class="d-none d-lg-flex col-lg-1"></div>
+        <div class="col-lg-10 col-md-12 bag-primary">
+          <!-- Conteudo -->
+          <div class="row" id="fichasVisial">
+            <div class="col-12">
+              <div class="row noprint mt-2">
+                <div class="col-4">
+                  <button class="btn texto my-1 w-100" onclick="window.print();" type="button">
+                    Imprima sua ficha  <i class="fas fa-print"></i>
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button class="btn texto my-1 w-100" onclick="alert('Não implementado');" type="button">
+                    Exporte sua ficha  <i class="fas fa-file-export"></i>
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button class="btn texto my-1 w-100" onclick="alert('Não implementado');" type="button">
+                    Edite sua ficha  <i class="fas fa-user-cog"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-1">
+            </div>
+            <div class="col-10 bordinhacurva mt-2 print" style="background-color:#fff;">
+              <div class="row">
+                <div class="col-4" id="1img">
+                </div>
+                <div class="col-4">
+                  <img class="rounded mx-auto d-block mt-4" src="img/logos/ede.jpeg" alt="Erro">
+                </div>
+                <div class="col-4" id="3img">
+                </div>
+              </div>
+              <div class="row my-1 bordinha mx-2">
+                <div class="col-12">
+                  <div class="row bordinha my-2 mx-2">
+                    <div class="col-6 bordinhar" id="mensageiro">
+                      mensageiro
+                    </div>
+                    <div class="col-6 bordinhal" id="opção">
+                      opção
+                    </div>
+                    <div class="col-12">
+                      <div class="my-2 mx-2 bordinhacurva" style="height:450px;" id="imgEscolhida">
+                      </div>
+                      <!-- Dados -->
+                      <div class="row">
+                        <div class="col-12 my-1" id="nome">
+                          nome
+                        </div>
+                        <div class="col-4 my-1">
+                          <div class="ml-2 mr-1 bordinhacurva text-center" id="int">
+                            int
+                          </div>
+                        </div>
+                        <div class="col-4 my-1">
+                          <div class="ml-1 mr-1 bordinhacurva text-center" id="fis">
+                            fis
+                          </div>
+                        </div>
+                        <div class="col-4 my-1">
+                          <div class="ml-1 mr-2 bordinhacurva text-center" id="ps">
+                            ps
+                          </div>
+                        </div>
+                        <div class="col-4 my-1">
+                          <div class="ml-2 mr-1 bordinhacurva text-center" id="soc">
+                            soc
+                          </div>
+                        </div>
+                        <div class="col-4 my-1">
+                          <div class="ml-1 mr-1 bordinhacurva text-center" id="mag">
+                            mag
+                          </div>
+                        </div>
+                        <div class="col-4 my-1">
+                          <div class="ml-1 mr-2 bordinhacurva text-center" id="pm">
+                            pm
+                          </div>
+                        </div>
+                        <div class="col-12" id="conhecimento">
+                          Conhecimentos:
+                        </div>
+                        <div class="col-12" id="poderes">
+                          Poderes:
+                        </div>
+                        <div class="col-12" id="idealismo">
+                          Idealismo:
+                        </div>
+                        <div class="col-12" id="radicalismo">
+                          Radicalismo:
+                        </div>
+                      </div>
+                      <!-- Fim Dados -->
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4 text-center textbarrinha">
+                      [&nbsp&nbsp]
+                    </div>
+                    <div class="col-4 text-center textbarrinha">
+                      (&nbsp&nbsp)
+                    </div>
+                    <div class="col-4 text-center textbarrinha">
+                      [&nbsp&nbsp]
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1">
+            </div>
+          </div>
+          <!-- Fim conteudo -->
+        </div>
+        <div class="d-none d-lg-flex col-lg-1"></div>
+      </div>
+    </div>
+      <!-- Fim Corpo -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="js/visual.js"></script>
+  </body>
+</html>
