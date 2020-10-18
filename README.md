@@ -5,4 +5,6 @@
 O Projeto consiste em um Sistema para automatizar a criação de fichas de RPG para o Sistema Cores Vivas. 
 Foi construído muito rapidamente, e é um trabalho realizado no início da faculdade, que agregou muito para os membros, tanto na questão do desenvolvimento, como no que se refere à trabalho em grupo e gerência de habilidades.
 
-![Exemplo](img/ex1.png?raw=true "Title")
+<h4> Exemplo da tela inicial do sistema web: </h4> 
+
+![Exemplo](img/ex1.png?raw=true "Exemplo Tela Inicial")
