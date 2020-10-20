@@ -12,6 +12,6 @@ Foi construído muito rapidamente, e é um trabalho realizado no início da facu
 
 #### Tecnologias Utilizadas:
 
-* HTML5 <code><img height="20" src="README-files/html5-logo.png"></code>
-* CSS3 <code><img height="20" src="README-files/css3-logo.png"></code>
-* JavaScript <code><img height="20" src="README-files/js-logo.png"></code>
+* <code><img height="20" src="README-files/html5-logo.png"></code>  HTML5
+* <code><img height="20" src="README-files/css3-logo.png"></code>   CSS3
+* <code><img height="20" src="README-files/js-logo.png"></code>     JavaScript
